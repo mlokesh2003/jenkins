@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         JIRA_URL = "https://lokedaasa-1766131983831.atlassian.net"
-        ISSUE_KEY = "HDFC Banking"
+        ISSUE_KEY = "HB"
     }
 
     stages {
