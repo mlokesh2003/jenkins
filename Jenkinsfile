@@ -20,17 +20,17 @@ pipeline {
                     usernameVariable: 'JIRA_USER',
                     passwordVariable: 'JIRA_TOKEN'
                 )]) {
-                    sh """
+                    sh '''
                     curl -X POST \
-                    --url ${JIRA_URL}/rest/api/3/issue/${ISSUE_KEY}/transitions \
-                    --user ${JIRA_USER}:${JIRA_TOKEN} \
+                    --url $JIRA_URL/rest/api/3/issue/$ISSUE_KEY/transitions \
+                    --user $JIRA_USER:$JIRA_TOKEN \
                     -H "Content-Type: application/json" \
                     --data '{
                       "transition": {
-                        "id": "31"
+                        "id": "REPLACE_WITH_CORRECT_ID"
                       }
                     }'
-                    """
+                    '''
                 }
             }
         }
