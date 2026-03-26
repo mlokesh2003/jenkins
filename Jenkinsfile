@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         JIRA_URL = "https://lokedaasa-1766131983831.atlassian.net"
-        ISSUE_KEY = "HB"
+        ISSUE_KEY = "HB-31"
     }
 
     stages {
